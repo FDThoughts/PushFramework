@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of service.products">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.quantity}}</td>
+            <td routerLink="/edit">Edit</td>
+        </tr>
+    </tbody>
+</table>
+<a routerLink="/edit">Create</a>
